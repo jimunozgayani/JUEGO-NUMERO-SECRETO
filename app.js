@@ -1,14 +1,9 @@
 
-let numeroMaximoPermitido = 10
+let numeroMaximoPermitido = 100
 let numeroSecreto = 0
 let qIntentos = 1
-let maximosIntentos = 3
+let maximosIntentos = 6
 let listaNumerosSorteados = [];
-
-console.log(numeroGenerado)
-console.log(listaNumerosSorteados)
-
-
 
 function asignarTextoElemento(elemento,texto) { 
     let elementoHTML = document.querySelector(elemento);
@@ -59,7 +54,7 @@ function generarNumeroSecreto() {
 
     console.log(numeroGenerado)
     console.log(listaNumerosSorteados)
-        if (listaNumerosSorteados.length == numeroMaximoPermitido) {
+        if (listaNumerosSorteados.length == 10) {
             asignarTextoElemento ("p", "Ya se sortearon todos los números posibles");
             asignarTextoElemento ("h1", "FIN DEL JUEGO")
             } else {
